@@ -35,7 +35,10 @@ Hotel managers want to gain insights into guest booking patterns and revenue opt
 
 #### 1. What is the total number of bookings at this hotel?
 
+SQL Query: 
 ![image](https://github.com/user-attachments/assets/483a31e7-c52d-4ff7-8119-84cdb185a52d)  
+
+Result:
 ![image](https://github.com/user-attachments/assets/37f7e178-268f-48d8-b238-580a2ea6edb2)
 
 The total bookings, counted from the first day to the last day in the dataset, is **5000**. This means the dataset contains **5000 rows**.
