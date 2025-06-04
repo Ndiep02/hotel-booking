@@ -55,7 +55,7 @@ SQL Query:
 Result:  
 ![image](https://github.com/user-attachments/assets/af2dcb52-5195-4f98-9821-38bc2c0f7c54)
 
-This dataset is collected through 3 years including **2023, 2024, 2025**.
+This dataset is collected through 3 years including 2023, 2024, 2025.
 There is not much difference in the number of bookings made between 2023 and 2024, with 2,177 and 2,516 bookings respectively. However, the number of bookings in 2025 is significantly lower, which could be due to incomplete data for the remaining months, as it is still early in the year 2025. 
 ---
 
