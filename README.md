@@ -6,7 +6,7 @@
 
 📁 **[Dataset Used]**  
 📄 **[SQL Analysis (Code)]**  
-📊 **[Dashboard - Tableau]**
+📊 **[Dashboard - Power_BI]**
 
 This is a personal project that uses a real-world dataset about hotel bookings. The main goal of this project is to answer several questions addressing the **price optimization problem**. In addition, I explore **booking trends over time**, identify the **most frequently booked room types**, and propose **potential additional services**.
 
