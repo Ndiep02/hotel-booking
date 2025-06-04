@@ -23,7 +23,7 @@ Hotel managers want to gain insights into guest booking patterns and revenue opt
 - First, I use SQL to explore useful insights. Serving the business objectives, I divide the problems into 3 main sections:  
   1. Analyzing total bookings by time  
   2. Analyzing bookings by room type and price range  
-  3. Analyzing possible optimized prices for room types by time with associated services  
+  3. Analyzing possible optimized methods for room types by time with associated services  
 - Then, I apply Python for predicting the optimized price.  
 - Finally, I use Power BI to visualize all information.  
 
@@ -145,7 +145,7 @@ SQL Query:
 Result:  
 ![image](https://github.com/user-attachments/assets/03d951a8-7d70-4e15-b54e-e2b2885c52ba)
 
-**Deluxe** and **Residential** rooms generate the most revenue.  
+**Deluxe** and **PResidential** rooms generate the most revenue.  
 While **Suite** and **Standard** generate about half as much.
 
 ---
@@ -192,8 +192,25 @@ The **highest price ranges** contribute the most to revenue. And The lower the p
 ---
 
 ## Main Insights
+- Middle time of the year - June, July, and on January - February, there are more bookings made
+- Little difference is seen between total bookinngs at weekend and  total bookinngs at weekday
+- More lower-price rooms are available at the hotel than the number of high-price rooms
+-> Current Stragedy :Low-priced rooms attract cost-conscious customers, while premium rooms attract those seeking quality.
+- In reality, more expensive rooms are booked than others : Presidental ( first), Executive (Second) which is not affectedd by the avg_time booked for each type of room
+- **Deluxe** and **PResidential** rooms generate the most revenue. 
+- Airport Pickup and Vip Lounge are top highest contributors to service revenue 
+- **Presidential**: Breakfast, Room Service, VIP Lounge, Airport Pickup, Tour Package, Spa  
+- **Executive**: VIP Lounge, Tour Package, Spa  
+- **Suite**: Room Service, Spa, Mini Bar  
+- **Deluxe**: Tour Package, VIP Lounge, Airport Pickup  
+- **Standard**: Spa, Room Service, Laundry
+- The lower the price range, the lower the revenue.
 
+## How to Optimize Room Price and Price overall?
+First, It can be seen that the current room prices do not entirely affect the booking volume, as high-priced rooms actually receive more bookings, while lower-priced rooms are not booked as frequently. This indicates that customers tend to prioritize quality, experience, and accompanying services — especially in the premium segment. Therefore, company could consider about the service quality.
 
-## How to Optimize Price?
+Secondly, regarding seasonality, peak periods such as June–July and January–February attract a higher number of bookings. Therefore, room prices can be slightly increased during these times.
 
----
+Thirdly, since number of luxury rooms books are more than other, at the same time, the hotel provides more rooms for low-priced rooms, therefore, hotel can consider build or transform some of low-priced rooms into luxury rooms to meet customer needs and therefore enhancing revenue. Anonther way is to enhance the facility provided at these lower-priced rooms, acccompanying with a bit higher price so that customer can have better experince and book these rooms more often.
+
+Finally, service combos can be bundled based on room types, using the top 3 most-used services for each room category. Prices for services like Airport Pickup and VIP Lounge can be slightly increased for premium customers.
