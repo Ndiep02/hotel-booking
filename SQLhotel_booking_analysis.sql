@@ -99,14 +99,20 @@ JOIN rooms r ON b.room_id = r.room_id
 GROUP BY r.room_type
 ORDER BY avg_booking DESC;
 
--- Revenue by room_types 
-SELECT r.room_type,
-       SUM(DATEDIFF(DAY, b.check_in, b.check_out) * r.price_per_night) AS revenue
-  FROM bookings b
- JOIN rooms r ON b.room_id = r.room_id
- WHERE b.status = 'Confirmed'
- GROUP BY r.room_type
- ORDER BY revenue DESC;
+-- Revenue by room_types (confirmed = 100%, others = 50%)
+SELECT 
+    r.room_type,
+    SUM(DATEDIFF(DAY, b.check_in, b.check_out)  * r.price_per_night  * 
+	     CASE 
+            WHEN b.status = 'Confirmed' THEN 1.0
+            ELSE 0.5
+          END
+    ) AS revenue
+FROM bookings b
+JOIN rooms r ON b.room_id = r.room_id
+GROUP BY r.room_type
+ORDER BY revenue DESC;
+
 
  -- Revenue by services
 SELECT se.service_name,
