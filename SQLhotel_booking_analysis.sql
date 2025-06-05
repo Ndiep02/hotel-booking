@@ -75,7 +75,6 @@ SELECT COUNT(*) weekend_books
  WHERE DATEPART(WEEKDAY,check_in) IN (2,3,4,5,6)
 
 
-
 --Distribution of room by price range 50-500 
 SELECT FLOOR(price_per_night/50)*50 as price_range, COUNT(*) AS room_count
 FROM rooms
@@ -98,6 +97,31 @@ JOIN rooms r ON b.room_id = r.room_id
  WHERE b.status = 'Confirmed'
 GROUP BY r.room_type
 ORDER BY avg_booking DESC;
+
+-- Avg occupancy rate by day
+WITH booking_days AS (
+    SELECT 
+        b.room_id,
+        CAST(DATEADD(DAY, v.number, b.check_in) AS DATE) stay_date
+    FROM bookings b
+    JOIN rooms r ON b.room_id = r.room_id
+    JOIN master..spt_values v ON v.type = 'P' 
+        AND v.number < DATEDIFF(DAY, b.check_in, b.check_out)
+    WHERE b.status = 'Confirmed'
+),
+occupancy_per_day AS (
+    SELECT 
+        stay_date,
+        COUNT(DISTINCT room_id) AS rooms_occupied
+    FROM booking_days
+    GROUP BY stay_date
+)
+SELECT 
+    COUNT(DISTINCT r.room_id) total_rooms,
+    ROUND(AVG(CAST(rooms_occupied AS FLOAT)) / COUNT(DISTINCT r.room_id) * 100, 2) avg_daily_occupancy_percent
+FROM occupancy_per_day
+CROSS JOIN rooms r;
+
 
 -- Revenue by room_types (confirmed = 100%, others = 50%)
 SELECT 
