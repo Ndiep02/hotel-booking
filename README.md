@@ -140,10 +140,12 @@ The average time used for each room_type is quite balanced. Since it is not beca
 #### 9. What is the revenue by room type?
 
 SQL Query:  
-![image](https://github.com/user-attachments/assets/acaf7e7e-732a-41c5-bf0b-a5b89cf43603)
+![image](https://github.com/user-attachments/assets/81b20021-a991-4d64-bd2d-4f74581a1a8a)
+
 
 Result:  
-![image](https://github.com/user-attachments/assets/03d951a8-7d70-4e15-b54e-e2b2885c52ba)
+![image](https://github.com/user-attachments/assets/ffc36e5a-9f74-4fc5-a66f-c4e76258e397)
+
 
 **Deluxe** and **PResidential** rooms generate the most revenue.  
 While **Suite** and **Standard** generate about half as much.
