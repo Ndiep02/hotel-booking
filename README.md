@@ -210,7 +210,7 @@ The **highest price ranges** contribute the most to revenue. And The lower the p
 
 ## Main Insights
 - Middle time of the year - June, July, and on January - February, there are more bookings made
-- Little difference is seen between total bookinngs at weekend and  total bookinngs at weekday
+- Little difference is seen between total bookings at weekend and  total bookings at weekday
 - More lower-price rooms are available at the hotel than the number of high-price rooms
 -> Current Stragedy :Low-priced rooms attract cost-conscious customers, while premium rooms attract those seeking quality.
 - In reality, more expensive rooms are booked than others : Presidental ( first), Executive (Second) which is not affectedd by the avg_time booked for each type of room
