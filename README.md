@@ -111,8 +111,22 @@ Rooms with the lowest prices tend to receive the highest number of rooms. At the
 ➡Low-priced rooms attract cost-conscious customers, while premium rooms attract those seeking quality.
 
 ---
+#### 7. What is the average occupancy rate per day?
 
-#### 7. What is the distribution of total bookings by room types?
+SQL Query:  
+![image](https://github.com/user-attachments/assets/06e56f1e-cb2f-4788-9089-fabd41cce929)
+
+
+
+Result:  
+![image](https://github.com/user-attachments/assets/047423e6-47e0-4b70-9093-1bffa3955d35)
+
+
+
+Just shy of 8% of rooms are used per day which could lead to the redundancy for the company.
+---
+
+#### 8. What is the distribution of total bookings by room types?
 
 SQL Query:  
 ![image](https://github.com/user-attachments/assets/10c8275b-ed0e-43fb-806f-a50c0e3787bb)
@@ -124,7 +138,7 @@ High-end rooms like **Presidential** and **Executive** receive the most bookings
 
 ---
 
-#### 8. What is the average time booked for each room type?
+#### 9. What is the average time booked for each room type?
 
 SQL Query:  
 ![image](https://github.com/user-attachments/assets/5ee091ab-e243-460b-bc50-dfbb2f909f79)
@@ -137,7 +151,8 @@ The average time used for each room_type is quite balanced. Since it is not beca
 
 ---
 
-#### 9. What is the revenue by room type?
+
+#### 10. What is the revenue by room type?
 
 SQL Query:  
 ![image](https://github.com/user-attachments/assets/81b20021-a991-4d64-bd2d-4f74581a1a8a)
@@ -152,7 +167,7 @@ While **Suite** and **Standard** generate about half as much.
 
 ---
 
-#### 10. What is the revenue by service?
+#### 11. What is the revenue by service?
 
 SQL Query:  
 ![image](https://github.com/user-attachments/assets/6e609bd7-df19-4ab7-9bed-3bf7f2170176)
@@ -164,7 +179,7 @@ Spa, Airport Pickup and Vip Lounge are top highest contributors to service reven
 
 ---
 
-#### 11. How often are services used by each room type?
+#### 12. How often are services used by each room type?
 
 SQL Query:  
 ![image](https://github.com/user-attachments/assets/5f74de7c-c1c6-4bae-a2e6-2cde77672f90)
@@ -181,7 +196,7 @@ Result:
 
 ---
 
-#### 12. What is the revenue by price range?
+#### 13. What is the revenue by price range?
 
 SQL Query:  
 ![image](https://github.com/user-attachments/assets/22e9c3bd-097c-483e-987c-f821a98ff6f8)
@@ -199,6 +214,7 @@ The **highest price ranges** contribute the most to revenue. And The lower the p
 - More lower-price rooms are available at the hotel than the number of high-price rooms
 -> Current Stragedy :Low-priced rooms attract cost-conscious customers, while premium rooms attract those seeking quality.
 - In reality, more expensive rooms are booked than others : Presidental ( first), Executive (Second) which is not affectedd by the avg_time booked for each type of room
+- There is a lot of vacancy rooms per day
 - **Deluxe** and **PResidential** rooms generate the most revenue. 
 - Airport Pickup and Vip Lounge are top highest contributors to service revenue 
 - **Presidential**: Breakfast, Room Service, VIP Lounge, Airport Pickup, Tour Package, Spa  
