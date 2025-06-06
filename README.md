@@ -24,7 +24,6 @@ Hotel managers want to gain insights into guest booking patterns and revenue opt
   1. Analyzing total bookings by time  
   2. Analyzing bookings by room type and price range  
   3. Analyzing possible optimized methods for room types by time with associated services  
-- Then, I apply Python for predicting the optimized price.  
 - Finally, I use Power BI to visualize all information.  
 
 ---
