@@ -1,12 +1,8 @@
-# 🏨 Hotel Booking Analysis Project
+# Hotel Booking Analysis Project
 
 ![Hotel Booking](https://github.com/user-attachments/assets/f3e75a12-d9f9-4899-9f61-f334f79f09e1)
 
 **Tools Used:** MS SQL Server, Python, Power BI
-
-📁 **[Dataset Used]**  
-📄 **[SQL Analysis (Code)]**  
-📊 **[Dashboard - Power_BI]**
 
 This is a personal project that uses a real-world dataset about hotel bookings. The main goal of this project is to answer several questions addressing the **price optimization problem**. In addition, I explore **booking trends over time**, identify the **most frequently booked room types**, and propose **potential additional services**.
 
@@ -28,7 +24,7 @@ Hotel managers want to gain insights into guest booking patterns and revenue opt
 
 ---
 
-## 📊 Useful Insights from the Dataset
+## Useful Insights from the Dataset
 
 ### Overview
 
