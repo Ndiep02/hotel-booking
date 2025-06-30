@@ -2,7 +2,7 @@ CLICK ON THIS LINK TO SEE THE DASHBOARD : https://admin.onhandbi.com/user/report
 
 # Hotel Booking Analysis Project
 
-![Hotel Booking](https://github.com/user-attachments/assets/f3e75a12-d9f9-4899-9f61-f334f79f09e1)
+![Hotel Booking](https://admin.onhandbi.com/user/report/TVRFek9BPT0=?tenant=ohbi_tenant)
 
 **Tools Used:** MS SQL Server, Python, Power BI
 
