@@ -1,9 +1,7 @@
 CLICK ON THIS LINK TO SEE THE DASHBOARD : https://admin.onhandbi.com/user/report/TVRFek53PT0=?tenant=ohbi_tenant
 
 # Hotel Booking Analysis Project
-
-![Hotel Booking](https://admin.onhandbi.com/user/report/TVRFek9BPT0=?tenant=ohbi_tenant)
-
+https://admin.onhandbi.com/user/report/TVRFek9BPT0=?tenant=ohbi_tenant
 **Tools Used:** MS SQL Server, Python, Power BI
 
 This is a personal project that uses a real-world dataset about hotel bookings. The main goal of this project is to answer several questions addressing the **price optimization problem**. In addition, I explore **booking trends over time**, identify the **most frequently booked room types**, and propose **potential additional services**.
